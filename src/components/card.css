@@ -1,0 +1,89 @@
+.custom-card {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card .ticket-id {
+    color: #aaa;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.custom-card .title {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+}
+
+.custom-card .card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.custom-card .tag-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #f0f1f3;
+}
+
+.custom-card .tag-icon {
+    background-color: #8c9ba7;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+}
+
+.custom-card .tag-text {
+    color: #5e6c71;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.custom-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.custom-card .more-icon-container {
+    display: grid;
+    place-items: center;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.custom-card svg {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .custom-card {
+        min-width: 100%;
+        padding: 0.75rem;
+    }
+}
